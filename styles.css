@@ -48,6 +48,7 @@
 	.contact-bottom{display:block}
 	.social-links{gap:24px}
 	.site-footer{grid-template-columns:1fr;gap:8px}
+	.site-header{border-bottom:2px solid #e75b3d}
 	.impact-strip{grid-template-columns:1fr 1fr;gap:28px 18px;padding:42px 0}
 	.impact-label{grid-column:1/-1}
 	.impact-stat{padding-left:16px}
