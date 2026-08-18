@@ -6,3 +6,28 @@
 .hero-visual:after{display:none}
 .hero-visual>*:not(.profile-photo){position:relative;z-index:1}
 @media(max-width:760px){.profile-photo{width:52%}.hero-visual:after{inset:0 43% 0 0;background:linear-gradient(90deg,#d9e2da 66%,rgba(217,226,218,0))}}
+
+/* Final layout refinements */
+.experience-section h2{max-width:760px}
+.timeline{max-width:940px;margin-left:auto}
+.timeline-item{max-width:860px}
+.timeline-content{max-width:680px}
+.project{transition:background-color .25s ease,transform .25s ease}
+.project:hover{background:#eee9df;transform:translateY(-3px)}
+.site-footer{border-top:1px solid #d9d6cc}
+
+@media(max-width:760px){
+	.brand{font-size:10px;letter-spacing:.04em}
+	.header-link{white-space:nowrap}
+	.hero-visual{min-height:360px}
+	.profile-photo{width:100%;object-position:center}
+	.hero-visual:after{display:none}
+	.experience-section{padding-top:90px;padding-bottom:95px}
+	.experience-section h2{margin-bottom:52px}
+	.timeline{margin-left:0}
+	.timeline:before{left:7px}
+	.timeline-item{padding-left:38px;margin-bottom:48px}
+	.timeline-marker{left:1px}
+	.timeline-content ul{padding-left:17px}
+	.project:hover{transform:none}
+}
