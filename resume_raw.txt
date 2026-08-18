@@ -1,0 +1,129 @@
+
+--- PAGE 1 ---
+QA Test Engineer
+Name :Gudelli Srikanth kumar
+Phone :+91-9177841357
+G-mail :gudellisrikanthkumar@gmail.com
+Current Job Role : QA Test Engineer
+Total Experience :5+ Years of experience in Automation & Manual Testing
+Career Objective
+To work as a Software Engineer applying my knowledge in the field of testing, designing, and maintenance to cater to the
+specific needs of the people. I wish to work in a team of motivated individuals who work towards the advancement of the
+company and its goals.
+Profile Summary
+ Having 5+ years of Experience in IT Software Testing experience in both Selenium Automation Testing and
+Manual Testing
+ Having 3+ years of experience in Selenium Web Driver with java and currently working as a Software Test
+Engineer on Selenium Automation
+ Having Experience in Product Development using RTS2.0 Tool.
+ RTS Development emphasizes prototype transformation, regular user testing, and continuous improvements
+based on measured feedback, making the products robust and user-friendly.
+ Automations Framework worked on Page Object Model, Page Factory Model, TestNG Frame work and Data
+driven and Hybrid framework
+ Having very good experience in Agile scrum methodology in Manual & Automation testing
+ Expertise in designing and developing the Page Object Model with Data driven framework independently and
+have knowledge on API testing and mobile applications
+ Playwright having 2 years I worked End to end Automated Complex web flows(login, payments, search) on
+Chrome and Firefox and I used auto-wait, screenshots, trace logs for robust debugging.
+ Playwright I reduced Regression bugs by 30% and cut test Execution time by 40% via Parallel runs.
+ Identified, documented, and reported software defects using tools like Jira, including detailed steps to
+reproduce. Having good experience in SDLC ,STLC and Agile Scrum Methodologies
+ Strong understanding of software development methodologies, including Agile and Waterfall.
+ Having very good experience in designing & developing Test Scenarios, Test Cases and Test Estimations and
+Test schedule and Test Deliverables etc.
+ Having good experience in Functional Requirements Analysis & Understanding
+ Collaborated closely with the development team to integrate automated tests into the CI/CD pipeline, enabling
+continuous testing and faster feedback.
+ Having good experience in Test Deliverables on time as per client expectations (RTM, Test Case Design &
+Execution, Reviews, Testing docs, KT training docs etc.)
+ Good experience in Smoke, Regression, System & Integration Testing and UAT Testing support etc.
+Professional Experience
+ Worked as QA Test Engineer for Insurite Private Limited from June 2020 to October 2024.
+ Worked as QA Test Engineer for Synergy Global Solutions from December 2024 to November 2025.
+--- PAGE 2 ---
+Education
+⮚ Completed B.Tech -2015 (C.S.E) In CMR College of Engineering and Technology, Hyderabad, TS
+Technical Skills
+ Automation Skills :Selenium Java , Eclipse, Selenium Web Driver, Product Development ,Playwright.
+ Testing Tool : SeleniumWebDriver, IDE, RC, Grid , TestNG , RTS2.0
+ Database : Oracle SQL
+ Packages :MS Office
+ Version Control :Git Hub
+ Languages : Core Java
+ Defect Reporting Tools : JIRA, Confluence
+Project 1 - CSB (CIGNA SUPPLEMETAL BENFITS)
+Client :CIGNA - LIFE & HEALTH INSURANCE
+Manual & Automation Tool :Selenium Webdriver, Manual Testing
+Team Size 6
+Role :QA Test Engineer
+Project Description:
+The CIGNA CSB Project handles the multiple insurance enrolling applications & Medicare Products like Cancer, Heart and
+Critical illness Etc and other enroll products out of Medicare like Dental, for aged 65 and older, certain younger people
+with disabilities and people with Ed- stage Renal Disease
+Roles & Responsibilities:
+● Conducted manual and automated testing for multiple web and mobile applications, ensuring high-quality software
+releases.
+● Developed and executed test cases, test scenarios, and test scripts based on functional and non-functional
+requirements.
+● Utilized automation frameworks and tools (Selenium WebDriver, TestNG) to automate test cases, reducing testing
+time and improving efficiency.
+● Worked closely with the development team to identify, troubleshoot, and resolve software defects.
+● Involved in Unit testing & Integration testing.
+● Attended the sprint plan meetings, daily stand up meetings, Bug review meetings, weekly status meetings,
+retrospect meetings and walkthroughs and interacted with Business Analysts and Developers for resolving Defects.
+● Implemented data- driven testing approaches to increase test coverage and efficiency, managing test data
+effectively across various scenarios.
+● Utilized automation frameworks and tools (Selenium WebDriver, TestNG) to automate test cases, reducing testing
+time and improving efficiency
+Project # 2: FGI – AVO
+Client :Future Generali India Insurance Company Ltd.
+--- PAGE 3 ---
+Manual & Automation Tool :Selenium Web driver, Manual Testing
+Role :Test Engineer
+Team Size 7
+Description:
+Future Generali Insurance Company Limited (FG) has chosen ‘Agent Virtual Office (AVO)’ Solutions for implementation
+as their Portal for Intermediaries. AVO is a one-stop solution for all intermediaries.
+1. AVO enables insurance companies in setting up different level of privileges to different intermediaries through
+user management module.
+2. AVO aids intermediaries to generate Quick Quotes, proposals, issue policies/recover notes for all Straight through
+processing (STP) cases. For NSTP (Non-STP), AVO enables a workflow between Underwriters (UW) and IMD to
+reduce the turnaround time (TAT) in achieving quick sales ratio.
+3. AVO enables intermediaries by providing self-service options like download of product catalogs/online product
+training, track the business figures via dashboards
+Roles & Responsibilities:
+● Reviewed and documented the requirements in Business Requirements Document (BRD), Functional Requirements
+Documents (FRD), User Guidebook and established traceability using Requirements Traceability Matrix (RTM).
+● Performed Smoke, Functionality, Integration, system, Regression tests based on Analysis and understanding of the
+requirements, non-functional specifications and end user needs.
+● DevelopedandmaintainedautomatedtestscriptsusingSeleniumWebDriverwithJava.
+● Collaborated with the QA team to identify test scenarios and create test case using Cucumber.
+● Performed Sanity testing before deploying any release to higher environment.
+● Tagging and Prioritization of the order of User stories for each sprint based on the client requirement.
+● Utilized automation Frameworks and tools (Selenium WebDriver, TestNG, Cucumber, SQL,Maven) to automate test
+cases, reducing testing time and improve efficiency.
+● Identify, communicate and implement risk-based testing approach when needed
+● Involved in complete testing life cycle including analysis, scenarios design, test case writing and exe
+Project # 3: (RECLS) - Life Science
+Client :Provider Management
+Manual & Automation Tool :Automation&Manual,RTS2.0
+Team Size 8
+Role :QA Test Engineer
+Description:
+Healthcare providers are important customers of pharmaceutical and medtech manufacturers. To ensure you get a fair net
+price for your products, you must be able to find the right combination of upfront net pricing agreements, pricing value drivers,
+and periodic backend rebates. But managing different pricing and agreements for group purchasing organizations (GPOs),
+integrated delivery networks (IDNs), health systems, and hospitals is no small task.
+Roles & Responsibilities:
+--- PAGE 4 ---
+● Performed Smoke, Functionality, Integration, system, Regression tests based on Analysis and understanding of the
+requirements, non-functional specifications and end user needs.
+● Worked closely with the development team to identify, troubleshoot, and resolve software defects.
+● Involved in Unit testing & Integration testing.
+● Implemented data-driven testing approaches to increase test coverage and efficiency, managing test data
+effectively across various scenarios.
+Declaration:
+I hereby declare that the information provided in this resume is true and accurate to the best of my knowledge and
+belief. I understand that any false information may disqualify me from consideration for employment.
+Regards,
+G.Srikanth Kumar.

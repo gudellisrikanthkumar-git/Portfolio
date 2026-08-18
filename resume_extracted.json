@@ -1,0 +1,56 @@
+{
+  "personal_info": {
+    "name": "Gudelli Srikanth Kumar",
+    "phone": "+91-9177841357",
+    "email": "gudellisrikanthkumar@gmail.com",
+    "job_title": "QA Test Engineer",
+    "total_experience": "5+ years"
+  },
+  "certifications": [],
+  "work_experience": [
+    {
+      "job_title": "QA Test Engineer",
+      "company": "Insurite Private Limited",
+      "start_date": "June 2020",
+      "end_date": "October 2024",
+      "responsibilities": [],
+      "achievements": []
+    },
+    {
+      "job_title": "QA Test Engineer",
+      "company": "Synergy Global Solutions",
+      "start_date": "December 2024",
+      "end_date": "November 2025",
+      "responsibilities": [],
+      "achievements": []
+    }
+  ],
+  "projects": [
+    {
+      "number": "1",
+      "name": "CSB (CIGNA SUPPLEMETAL BENFITS)",
+      "client": "CIGNA - LIFE & HEALTH INSURANCE",
+      "role": "QA Test Engineer",
+      "description": "",
+      "responsibilities": []
+    },
+    {
+      "number": "2",
+      "name": ": FGI – AVO",
+      "client": "Future Generali India Insurance Company Ltd.",
+      "role": "Test Engineer",
+      "description": "Future Generali Insurance Company Limited (FG) has chosen ‘Agent Virtual Office (AVO)’ Solutions for implementation\nas their Portal for Intermediaries. AVO is a one-stop solution for all intermediaries.\n1. AVO enables insurance companies in setting up different level of privileges to different intermediaries through\nuser management module.\n2. AVO aids intermediaries to generate Quick Quotes, proposals, issue policies/recover notes for all Straight through\nprocessing (STP) cases. For NSTP (Non-STP), AVO enables a workflow between Underwriters (UW) and IMD to\nreduce the turnaround time (TAT) in achieving quick sales ratio.\n3. AVO enables intermediaries by providing self-service options like download of product catalogs/online product\ntraining, track the business figures via dashboards",
+      "responsibilities": [
+        "Involved in complete testing life cycle including analysis, scenarios design, test case writing and exe"
+      ]
+    },
+    {
+      "number": "3",
+      "name": ": (RECLS) - Life Science",
+      "client": "Provider Management",
+      "role": "QA Test Engineer",
+      "description": "Healthcare providers are important customers of pharmaceutical and medtech manufacturers. To ensure you get a fair net\nprice for your products, you must be able to find the right combination of upfront net pricing agreements, pricing value drivers,\nand periodic backend rebates. But managing different pricing and agreements for group purchasing organizations (GPOs),\nintegrated delivery networks (IDNs), health systems, and hospitals is no small task.",
+      "responsibilities": []
+    }
+  ]
+}
