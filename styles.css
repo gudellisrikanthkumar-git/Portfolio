@@ -37,9 +37,17 @@
 .site-footer{min-height:64px;padding:18px 0;display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:32px;font-size:12px}
 .site-footer a{color:inherit;text-decoration:none;font-weight:700}
 .site-footer a:hover{color:#f05c3b}
+.impact-strip{display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:24px;padding:54px 0;border-bottom:1px solid #d9d6cc}
+.impact-label span,.impact-stat span{font:500 11px/1.35 'DM Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:#60706d}
+.impact-label p{max-width:220px;margin:14px 0 0;color:#63716c;font-size:13px}
+.impact-stat{border-left:1px solid #d9d6cc;padding-left:24px;display:flex;flex-direction:column;justify-content:center;gap:9px}
+.impact-stat strong{font:600 clamp(36px,4vw,56px)/.9 'Space Grotesk';letter-spacing:-.04em;color:#e75b3d}
 
 @media(max-width:760px){
 	.contact-bottom{display:block}
 	.social-links{gap:24px}
 	.site-footer{grid-template-columns:1fr;gap:8px}
+	.impact-strip{grid-template-columns:1fr 1fr;gap:28px 18px;padding:42px 0}
+	.impact-label{grid-column:1/-1}
+	.impact-stat{padding-left:16px}
 }
