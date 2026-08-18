@@ -51,3 +51,6 @@
 	.impact-label{grid-column:1/-1}
 	.impact-stat{padding-left:16px}
 }
+
+body,.experience-section{background:#f4f7f4}
+.project:hover{background:#e8eee9}
