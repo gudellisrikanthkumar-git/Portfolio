@@ -31,3 +31,15 @@
 	.timeline-content ul{padding-left:17px}
 	.project:hover{transform:none}
 }
+
+.contact-bottom{display:flex;align-items:center;justify-content:space-between;gap:32px}
+.social-links{display:flex;align-items:center;gap:28px}
+.site-footer{min-height:64px;padding:18px 0;display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:32px;font-size:12px}
+.site-footer a{color:inherit;text-decoration:none;font-weight:700}
+.site-footer a:hover{color:#f05c3b}
+
+@media(max-width:760px){
+	.contact-bottom{display:block}
+	.social-links{gap:24px}
+	.site-footer{grid-template-columns:1fr;gap:8px}
+}
