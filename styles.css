@@ -73,3 +73,23 @@ body,.experience-section{background:#eef3f0}
 	.impact-strip{column-gap:18px}
 	.site-footer{column-gap:0}
 }
+
+:root{--paper:#eef3f0;--ink:#172b2a;--muted:#63716c;--line:#cfdad4;--accent:#e75b3d}
+body,.experience-section{background:var(--paper);color:var(--ink)}
+.site-header{border-bottom:2px solid var(--accent)}
+.hero-copy{max-width:560px}
+.hero-lede{max-width:480px}
+.hero-visual{border:1px solid var(--line);box-shadow:12px 12px 0 rgba(23,43,42,.06)}
+.profile-photo{background:#dfe9e2}
+.project h3{max-width:430px}
+.project-summary{color:var(--muted)}
+.section-label{border-top-color:var(--line)}
+.impact-strip{border-bottom-color:var(--line)}
+.impact-stat{border-left-color:var(--line)}
+.site-footer{border-top-color:var(--line)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+
+@media(max-width:760px){
+	.hero-visual{box-shadow:8px 8px 0 rgba(23,43,42,.06)}
+	.project h3{max-width:none}
+}
