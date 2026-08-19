@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gudellisrikanthkumar-git.github.io/Portfolio/sitemap.xml
+Sitemap: https://gudellisrikanthkumar-git.github.io/Srikanth-Kumar-Portfolio/sitemap.xml
