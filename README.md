@@ -74,6 +74,6 @@ Pharmaceutical pricing platform managing complex agreements across GPOs and heal
 
 ---
 
-**Portfolio:** [gudellisrikanthkumar-git.github.io/Portfolio](https://gudellisrikanthkumar-git.github.io/Portfolio/)
+**Portfolio:** [gudellisrikanthkumar-git.github.io/Srikanth-Kumar-Portfolio](https://gudellisrikanthkumar-git.github.io/Srikanth-Kumar-Portfolio/)
 
 *Automating the routine, investigating the unexpected, and finding bugs before users do.* 🐞
