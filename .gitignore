@@ -3,3 +3,4 @@ portfolio-*.png
 organized-portfolio-final.png
 __pycache__/
 *.pyc
+java-tools/target/
