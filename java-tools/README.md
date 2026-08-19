@@ -1,18 +1,23 @@
 # Java Resume Tools
 
-This Maven utility replaces the resume text extraction step without changing the portfolio website or resume links.
+This Maven utility replaces the Python resume text extractor without changing the portfolio website or its links.
 
 ## Requirements
 
-- JDK 17 or newer
-- Maven 3.9 or newer
+- Java 17+
+- Maven 3.9+
 
-## Run
-
-From the repository root:
+## Run from the portfolio root
 
 ```powershell
-mvn -f java-tools/pom.xml compile exec:java
+mvn -f java-tools\pom.xml compile
+mvn -f java-tools\pom.xml exec:java
 ```
 
-The utility reads `assets/resume/Gudelli_Srikanth_Kumar_Resume.pdf` and writes extracted text to `data/resume_raw.txt`.
+The extractor reads:
+
+`assets/resume/Gudelli_Srikanth_Kumar_Resume.pdf`
+
+and writes:
+
+`data/resume_raw.txt`

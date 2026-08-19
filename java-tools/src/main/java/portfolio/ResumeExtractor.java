@@ -11,45 +11,50 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 
 public final class ResumeExtractor {
-    private static final String RESUME_FILE = "Gudelli_Srikanth_Kumar_Resume.pdf";
-
     private ResumeExtractor() {
     }
 
     public static void main(String[] args) throws IOException {
-        Path repositoryRoot = findRepositoryRoot();
-        Path resumePath = repositoryRoot.resolve("assets").resolve("resume").resolve(RESUME_FILE);
-        Path outputPath = repositoryRoot.resolve("data").resolve("resume_raw.txt");
+        Path portfolioDirectory = locatePortfolioDirectory();
+        Path resumePath = portfolioDirectory.resolve(
+                Paths.get("assets", "resume", "Gudelli_Srikanth_Kumar_Resume.pdf"));
+        Path outputPath = portfolioDirectory.resolve(Paths.get("data", "resume_raw.txt"));
 
-        if (!Files.exists(resumePath)) {
-            throw new IOException("Resume not found: " + resumePath);
+        if (!Files.isRegularFile(resumePath)) {
+            throw new IOException("Resume PDF not found: " + resumePath);
+        }
+
+        String extractedText;
+        try (PDDocument document = Loader.loadPDF(resumePath.toFile())) {
+            PDFTextStripper stripper = new PDFTextStripper();
+            StringBuilder text = new StringBuilder();
+            for (int page = 1; page <= document.getNumberOfPages(); page++) {
+                stripper.setStartPage(page);
+                stripper.setEndPage(page);
+                text.append("\n--- PAGE ").append(page).append(" ---\n");
+                text.append(stripper.getText(document));
+            }
+            extractedText = text.toString();
         }
 
         Files.createDirectories(outputPath.getParent());
-
-        String text;
-        try (PDDocument document = Loader.loadPDF(resumePath.toFile())) {
-            text = new PDFTextStripper().getText(document);
-        }
-
-        Files.writeString(outputPath, text, StandardCharsets.UTF_8);
-        System.out.println("Resume extracted successfully.");
-        System.out.println("Input:  " + resumePath);
-        System.out.println("Output: " + outputPath);
+        Files.writeString(outputPath, extractedText, StandardCharsets.UTF_8);
+        System.out.print(extractedText);
+        System.out.println("\n[Raw text saved to " + outputPath + "]");
     }
 
-    private static Path findRepositoryRoot() {
-        Path current = Paths.get(System.getProperty("user.dir")).toAbsolutePath().normalize();
-        Path candidate = current;
-
-        while (candidate != null) {
-            if (Files.exists(candidate.resolve("index.html"))
-                    && Files.isDirectory(candidate.resolve("assets"))) {
-                return candidate;
-            }
-            candidate = candidate.getParent();
+    private static Path locatePortfolioDirectory() {
+        Path current = Paths.get("").toAbsolutePath().normalize();
+        if (Files.isRegularFile(current.resolve(Paths.get("assets", "resume", "Gudelli_Srikanth_Kumar_Resume.pdf")))) {
+            return current;
         }
 
-        return current;
+        Path parent = current.getParent();
+        if (parent != null && Files.isRegularFile(parent.resolve(
+                Paths.get("assets", "resume", "Gudelli_Srikanth_Kumar_Resume.pdf")))) {
+            return parent;
+        }
+
+        throw new IllegalStateException("Run this tool from the portfolio root or java-tools directory.");
     }
 }
