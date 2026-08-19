@@ -93,3 +93,24 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
 	.hero-visual{box-shadow:8px 8px 0 rgba(23,43,42,.06)}
 	.project h3{max-width:none}
 }
+
+/* Final framework polish */
+body{overflow-x:hidden}
+::selection{background:var(--accent);color:#fff}
+.main-nav{gap:24px;margin-left:0}
+.main-nav a,.header-link,.text-link,.social-links a{display:inline-flex;align-items:center;min-height:28px}
+.hero-actions{flex-wrap:wrap;row-gap:18px}
+.project{min-height:420px}
+.project-body{min-width:0}
+.project-summary{max-width:430px}
+.tags{margin-top:auto}
+.section-label{padding-top:18px}
+.work-intro{align-items:end}
+.contact-bottom{align-items:flex-end}
+
+@media(max-width:760px){
+	.main-nav{gap:18px}
+	.hero-actions{gap:18px}
+	.project{min-height:0}
+	.project-summary{max-width:none}
+}
