@@ -2,7 +2,8 @@ import pdfplumber
 import os
 import json
 
-pdf_path = r"C:\Users\671893\OneDrive - Epiq Inc\Desktop\Portfolio\Gudelli_Srikanth_kumar .pdf"
+portfolio_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+pdf_path = os.path.join(portfolio_dir, "assets", "resume", "Gudelli_Srikanth_Kumar_Resume.pdf")
 
 if os.path.exists(pdf_path):
     with pdfplumber.open(pdf_path) as pdf:
@@ -15,7 +16,7 @@ if os.path.exists(pdf_path):
         print(full_text)
         
         # Save raw text to file for reference
-        with open("resume_raw.txt", "w", encoding="utf-8") as f:
+        with open(os.path.join(portfolio_dir, "data", "resume_raw.txt"), "w", encoding="utf-8") as f:
             f.write(full_text)
         print("\n\n[Raw text saved to resume_raw.txt]")
 else:

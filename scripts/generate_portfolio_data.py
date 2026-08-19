@@ -4,8 +4,10 @@ from pathlib import Path
 import re
 
 # Find the PDF file
-portfolio_dir = Path(r"C:\Users\671893\OneDrive - Epiq Inc\Desktop\Portfolio")
-pdf_files = list(portfolio_dir.glob("*.pdf"))
+portfolio_dir = Path(__file__).resolve().parents[1]
+pdf_files = list((portfolio_dir / "assets" / "resume").glob("*.pdf"))
+if not pdf_files:
+    raise FileNotFoundError("No resume PDF found in assets/resume")
 pdf_path = pdf_files[0]
 
 # Extract text from PDF
@@ -154,11 +156,11 @@ resume_data = {
 }
 
 # Save as JSON
-with open("resume_structured.json", "w", encoding="utf-8") as f:
+with open(portfolio_dir / "data" / "resume_structured.json", "w", encoding="utf-8") as f:
     json.dump(resume_data, f, indent=2, ensure_ascii=False)
 
 print("="*80)
 print("COMPREHENSIVE RESUME EXTRACTION - JSON FORMAT")
 print("="*80)
 print(json.dumps(resume_data, indent=2, ensure_ascii=False))
-print("\n✓ JSON file saved to: resume_structured.json")
+print("\n✓ JSON file saved to: data/resume_structured.json")

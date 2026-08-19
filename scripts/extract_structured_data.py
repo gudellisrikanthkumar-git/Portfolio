@@ -4,8 +4,8 @@ from pathlib import Path
 import re
 
 # Find the PDF file
-portfolio_dir = Path(r"C:\Users\671893\OneDrive - Epiq Inc\Desktop\Portfolio")
-pdf_files = list(portfolio_dir.glob("*.pdf"))
+portfolio_dir = Path(__file__).resolve().parents[1]
+pdf_files = list((portfolio_dir / "assets" / "resume").glob("*.pdf"))
 pdf_path = pdf_files[0]
 
 # Extract text from PDF
@@ -107,7 +107,7 @@ for proj_num, proj_name in projects:
         })
 
 # Save as JSON
-with open("resume_extracted.json", "w", encoding="utf-8") as f:
+with open(portfolio_dir / "data" / "resume_extracted.json", "w", encoding="utf-8") as f:
     json.dump(resume_data, f, indent=2, ensure_ascii=False)
 
 print("="*80)

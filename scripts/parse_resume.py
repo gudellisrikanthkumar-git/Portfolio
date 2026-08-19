@@ -4,9 +4,9 @@ import json
 import re
 from pathlib import Path
 
-# Find the PDF file - it has a non-breaking space
-portfolio_dir = Path(r"C:\Users\671893\OneDrive - Epiq Inc\Desktop\Portfolio")
-pdf_files = list(portfolio_dir.glob("*.pdf"))
+# Find the resume PDF in the organized asset directory.
+portfolio_dir = Path(__file__).resolve().parents[1]
+pdf_files = list((portfolio_dir / "assets" / "resume").glob("*.pdf"))
 
 if not pdf_files:
     print("No PDF files found!")
@@ -25,7 +25,7 @@ with pdfplumber.open(pdf_path) as pdf:
             full_text += text
 
 # Save raw text for reference
-with open("resume_raw.txt", "w", encoding="utf-8") as f:
+with open(portfolio_dir / "data" / "resume_raw.txt", "w", encoding="utf-8") as f:
     f.write(full_text)
 
 print("\n" + "="*80)

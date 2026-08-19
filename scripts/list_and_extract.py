@@ -1,14 +1,19 @@
 import os
 import sys
+from pathlib import Path
 
-directory = r"C:\Users\671893\OneDrive - Epiq Inc\Desktop\Portfolio"
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+portfolio_dir = Path(__file__).resolve().parents[1]
+directory = portfolio_dir / "assets" / "resume"
 print(f"Current directory: {directory}")
-print(f"Directory exists: {os.path.exists(directory)}")
+print(f"Directory exists: {directory.exists()}")
 print("\nFiles in directory:")
 
-if os.path.exists(directory):
+if directory.exists():
     for item in os.listdir(directory):
-        full_path = os.path.join(directory, item)
+        full_path = directory / item
         print(f"  {item} (exists: {os.path.exists(full_path)})")
         
         # Check for PDF files
