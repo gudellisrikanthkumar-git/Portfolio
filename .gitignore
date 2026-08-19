@@ -1,2 +1,5 @@
 .playwright-mcp/
 portfolio-*.png
+organized-portfolio-final.png
+__pycache__/
+*.pyc
